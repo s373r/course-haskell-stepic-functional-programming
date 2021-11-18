@@ -15,7 +15,7 @@ Status: 🚧
   - [✏️ 1.1. Установка и настройка среды](1_1_installing_and_configuring_a_developer_environment/Main.hs) / `Installing and configuring a developer environment`
   - [✏️ 1.2. Функции](1_2_functions/Main.hs) / `Functions`
   - [✏️ 1.3. Операторы](1_3_operators/Main.hs) / `Operators`
-  - 🚧 1.4. Базовые типы / `Basic types`
+  - [✏️ 1.4. Базовые типы](1_4_basic_types/Main.hs) / `Basic types`
   - 🚧 1.5. Рекурсия / `Recursion`
   - 🚧 1.6. Локальные связывания и правила отступов / `Local bindings and indentation rules`
 - 🚧 2. Основы программирования / `Basics of programming`
