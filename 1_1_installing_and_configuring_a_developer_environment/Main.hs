@@ -34,8 +34,8 @@ https://www.haskell.org/hoogle/
 
 {-
 GHCi
-
 ====
+
 Prelude
 -------
 is imported by default into all Haskell modules unless either there is
@@ -70,13 +70,13 @@ SOLUTION
 
 {-
 Import in GHCi
-==============
+--------------
 > :load Test -- or :l Test
 > sayHello
 Hello from module Test!
 
 Reload changed modules
-======================
+----------------------
 :reload [Module]
 :r      [Module]
 
