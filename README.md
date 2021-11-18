@@ -13,7 +13,7 @@ Status: 🚧
 
 - **1. Введение** / `Introduction`
   - [✏️ 1.1. Установка и настройка среды](1_1_installing_and_configuring_a_developer_environment/Main.hs) / `Installing and configuring a developer environment`
-  - 🚧 1.2. Функции / `Functions`
+  - [✏️ 1.2. Функции](1_2_functions/Main.hs) / `Functions`
   - 🚧 1.3. Операторы / `Operators`
   - 🚧 1.4. Базовые типы / `Basic types`
   - 🚧 1.5. Рекурсия / `Recursion`
