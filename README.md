@@ -17,7 +17,7 @@ Status: 🚧
   - [✏️ 1.3. Операторы](1_3_operators/Main.hs) / `Operators`
   - [✏️ 1.4. Базовые типы](1_4_basic_types/Main.hs) / `Basic types`
   - [✏️ 1.5. Рекурсия](1_5_recursion/Main.hs) / `Recursion`
-  - 🚧 1.6. Локальные связывания и правила отступов / `Local bindings and indentation rules`
+  - [✏️ 1.6. Локальные связывания и правила отступов](1_6_local_bindings_and_indentation_rules/Main.hs) / `Local bindings and indentation rules`
 - 🚧 2. Основы программирования / `Basics of programming`
   - 🚧 2.1. Параметрический полиморфизм / `Parametric polymorphism`
   - 🚧 2.2. Параметрический полиморфизм (2) / `Parametric polymorphism (2)`
