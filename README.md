@@ -19,7 +19,7 @@ Status: 🚧
   - [✏️ 1.5. Рекурсия](1_5_recursion/Main.hs) / `Recursion`
   - [✏️ 1.6. Локальные связывания и правила отступов](1_6_local_bindings_and_indentation_rules/Main.hs) / `Local bindings and indentation rules`
 - 🚧 2. Основы программирования / `Basics of programming`
-  - 🚧 2.1. Параметрический полиморфизм / `Parametric polymorphism`
+  - [✏️ 2.1. Параметрический полиморфизм](2_1_parametric_polymorphism/Main.hs) / `Parametric polymorphism`
   - 🚧 2.2. Параметрический полиморфизм (2) / `Parametric polymorphism (2)`
   - 🚧 2.3. Классы типов / `Types classes`
   - 🚧 2.4. Стандартные классы типов / `Standard type classes`
