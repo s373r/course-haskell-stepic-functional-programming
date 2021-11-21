@@ -23,7 +23,7 @@ Status: 🚧
   - [✏️ 2.2. Параметрический полиморфизм (2)](2_2_parametric_polymorphism_2/Main.hs) / `Parametric polymorphism (2)`
   - [✏️ 2.3. Классы типов](2_3_type_classes/Main.hs) / `Type classes`
   - [✏️ 2.4. Стандартные классы типов](2_4_standard_type_classes/Main.hs) / `Standard type classes`
-  - 🚧 2.5. Нестрогая семантика / `Lax semantics`
+  - [✏️ 2.5. Нестрогая семантика](2_5_lax_semantics/Main.hs) / `Lax semantics`
   - 🚧 2.6. Модули и компиляция / `Modules and compilation`
 - 🚧 3. Списки / `Lists`
   - 🚧 3.1. Функции для работы со списками / `Functions for working with lists `
