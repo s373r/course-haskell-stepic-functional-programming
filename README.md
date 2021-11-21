@@ -21,7 +21,7 @@ Status: 🚧
 - 🚧 2. Основы программирования / `Basics of programming`
   - [✏️ 2.1. Параметрический полиморфизм](2_1_parametric_polymorphism/Main.hs) / `Parametric polymorphism`
   - [✏️ 2.2. Параметрический полиморфизм (2)](2_2_parametric_polymorphism_2/Main.hs) / `Parametric polymorphism (2)`
-  - 🚧 2.3. Классы типов / `Type classes`
+  - [✏️ 2.3. Классы типов](2_3_type_classes/Main.hs) / `Type classes`
   - 🚧 2.4. Стандартные классы типов / `Standard type classes`
   - 🚧 2.5. Нестрогая семантика / `Lax semantics`
   - 🚧 2.6. Модули и компиляция / `Modules and compilation`
