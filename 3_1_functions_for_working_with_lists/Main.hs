@@ -1,8 +1,4 @@
 {-
-Modules and compilation
-=============
--}
-{-
 Functions for working with lists
 ================================
 -}
