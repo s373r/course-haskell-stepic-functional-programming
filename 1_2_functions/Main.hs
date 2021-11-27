@@ -88,8 +88,12 @@ GHCi> lenVec3 2 3 6
 
 SOLUTION
 ========
-lenVec3 x y z = sqrt (x^2 + y^2 + z^2)
 -}
+lenVec3 x y z = sqrt (x ^ 2 + y ^ 2 + z ^ 2)
+
+-- >>> lenVec3 2 3 6 == 7.0
+-- True
+--------------------------------------------------------------------------------
 
 {-
 Constant function
@@ -135,8 +139,12 @@ GHCi> sign (-100)
 -1
 SOLUTION
 ========
-sign x = if x > 0 then 1 else (if x == 0 then 0 else (-1))
 -}
+sign x = if x > 0 then 1 else (if x == 0 then 0 else (-1))
+
+-- >>> sign (-100) == (-1)
+-- True
+--------------------------------------------------------------------------------
 
 {-
 Partial application

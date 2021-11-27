@@ -2,6 +2,7 @@
 Local bindings and indentation rules
 ====================================
 -}
+import Data.Char (digitToInt)
 
 -- NOTE: shown indentation rules reformatted with the code formatter
 roots :: Double -> Double -> Double -> (Double, Double)
@@ -70,12 +71,16 @@ GHCi> seqA 301
 
 SOLUTION
 ========
+-}
 seqA :: Integer -> Integer
 seqA n =
   let f _ _ n1 0 = n1
       f n3 n2 n1 n = f (n3 + n2 - 2 * n1) n3 n2 (n - 1)
    in f 3 2 1 n
--}
+
+-- >>> seqA 301 == 1276538859311178639666612897162414
+-- True
+--------------------------------------------------------------------------------
 
 roots'''' :: Double -> Double -> Double -> (Double, Double)
 roots'''' a b c = (x1, x2)
@@ -123,13 +128,15 @@ GHCi> sum'n'count (-39)
 
 SOLUTION
 ========
-import Data.Char (digitToInt)
-
+-}
 sum'n'count :: Integer -> (Integer, Integer)
 sum'n'count x = (toInteger (sum digits), toInteger (length digits))
   where
     digits = map digitToInt (show (abs x))
--}
+
+-- >>>sum'n'count (-39) == (12,2)
+-- True
+--------------------------------------------------------------------------------
 
 {-
 TASK
@@ -148,6 +155,7 @@ GHCi> integration sin pi 0
 
 SOLUTION
 ========
+-}
 integration :: (Double -> Double) -> Double -> Double -> Double
 integration f a b = trapezoidalIntegral 1000
   where
@@ -159,4 +167,7 @@ integration f a b = trapezoidalIntegral 1000
           | otherwise = sum (acc + f (x i)) (i - 1)
           where
             x i = a + i * h
--}
+
+-- >>> integration sin pi 0 - (-2.0) < 1e-4
+-- True
+--------------------------------------------------------------------------------

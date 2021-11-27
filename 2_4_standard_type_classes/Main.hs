@@ -54,6 +54,7 @@ stomp, если переданное ему значение приводит в
 
 SOLUTION
 ========
+-}
 class KnownToGork a where
   stomp :: a -> a
   doesEnrageGork :: a -> Bool
@@ -73,7 +74,8 @@ class (KnownToGork a, KnownToMork a) => KnownToGorkAndMork a where
       mork = doesEnrageMork x
       gork = doesEnrageGork x
       both = mork && gork
--}
+
+--------------------------------------------------------------------------------
 
 -- :t show
 -- show :: Shown a => a -> String
@@ -124,11 +126,19 @@ GHCi> ip
 
 SOLUTION
 ========
-a = 127.2
-b = 24.1
-c = 20.1
-d = 2
 -}
+a = 127.2
+
+b = 24.1
+
+c = 20.1
+
+d = 2
+
+-- >>> ip = show a ++ show b ++ show c ++ show d
+-- >>> ip == "127.224.120.12"
+-- True
+--------------------------------------------------------------------------------
 
 -- class Enum a where
 --   succ, pred :: a -> a
@@ -212,6 +222,7 @@ False
 
 SOLUTION
 ========
+-}
 class (Enum a, Bounded a, Eq a) => SafeEnum a where
   ssucc :: a -> a
   ssucc x
@@ -226,7 +237,14 @@ class (Enum a, Bounded a, Eq a) => SafeEnum a where
     | otherwise = pred x
     where
       underflow = x == minBound
--}
+
+instance SafeEnum Bool
+
+-- >>> ssucc False == True
+-- >>> ssucc True  == False
+-- True
+-- True
+--------------------------------------------------------------------------------
 
 -- class Num a where
 --   (+), (-), (*) :: a -> a -> a
@@ -310,8 +328,12 @@ GHCi> avg 3 4 8
 
 SOLUTION
 ========
+-}
 avg :: Int -> Int -> Int -> Double
 avg a b c = sum / 3.0
   where
     sum = fromInteger (toInteger a + toInteger b + toInteger c)
--}
+
+-- >>> avg 3 4 8 == 5.0
+-- True
+--------------------------------------------------------------------------------

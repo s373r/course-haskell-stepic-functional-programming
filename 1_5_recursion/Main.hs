@@ -29,11 +29,17 @@ TASK
 
 SOLUTION
 ========
+-}
 doubleFact :: Integer -> Integer
 doubleFact (-1) = 1
 doubleFact 0 = 1
 doubleFact n = n * doubleFact (n - 2)
--}
+
+-- >>> doubleFact 7 == 7 * 5 * 3 * 1
+-- >>> doubleFact 8 == 8 * 6 * 4 * 2
+-- True
+-- True
+--------------------------------------------------------------------------------
 
 factorial'' 0 = 1
 factorial'' n =
@@ -79,7 +85,6 @@ True
 {-
 TASK
 ====
-
 Последовательность чисел Фибоначчи 0,1,1,2,3,5,8,13,21, …  легко определить
 рекурсивно, задав два первых терминирующих значения и определив любое
 последующее как сумму двух непосредственно предыдущих:
@@ -106,6 +111,7 @@ F_-1 = 1, F_-2 = -1, …, F_-10 = -55, …
 
 SOLUTION
 ========
+-}
 fibonacciOnlyPositive :: Integer -> Integer
 fibonacciOnlyPositive n
   | n == 0 = 0
@@ -119,7 +125,12 @@ negativeSignForEven v
 
 fibonacci :: Integer -> Integer
 fibonacci n = negativeSignForEven n * fibonacciOnlyPositive (abs n)
--}
+
+-- >>> fibonacci (-10) == (-55)
+-- >>> fibonacci (-9)  == 34
+-- True
+-- True
+--------------------------------------------------------------------------------
 
 factorial5 n
   | n >= 0 = helper 1 n
@@ -151,6 +162,7 @@ GHCi> fibonacci 30
 
 SOLUTION
 ========
+-}
 fibonacciAcc :: Integer -> Integer -> Integer -> Integer
 fibonacciAcc prev acc n
   | n == 0 = acc
@@ -161,6 +173,9 @@ negativeSignForNegativeEven v
   | v < 0 && even v = -1
   | otherwise = 1
 
-fibonacci :: Integer -> Integer
-fibonacci n = negativeSignForNegativeEven n * fibonacciAcc 1 0 (abs n)
--}
+fibonacci' :: Integer -> Integer
+fibonacci' n = negativeSignForNegativeEven n * fibonacciAcc 1 0 (abs n)
+
+-- >>> fibonacci' 30 == 832040
+-- True
+--------------------------------------------------------------------------------

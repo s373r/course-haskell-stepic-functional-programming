@@ -39,6 +39,7 @@ z :: Double
 > 123456788888888888888888888888888888888 :: Integer
 123456788888888888888888888888888888888
 -}
+import Data.Char
 
 {-
 TASK
@@ -97,14 +98,18 @@ TASK
 
 SOLUTION
 ========
+-}
 discount :: Double -> Double -> Double -> Double
 discount limit proc sum = if sum >= limit then sum * (100 - proc) / 100 else sum
 
 standardDiscount :: Double -> Double
 standardDiscount = discount 1000 5
--}
 
-import Data.Char
+-- >>> standardDiscount 2000 == 1900.0
+-- >>> standardDiscount 800  == 800.0
+-- True
+-- True
+--------------------------------------------------------------------------------
 
 test = isDigit '7'
 
@@ -135,11 +140,16 @@ GHCi> twoDigits2Int '4' '2'
 
 SOLUTION
 ========
-import Data.Char
-
-twoDigits2Int :: Char -> Char -> Int
-twoDigits2Int a b = if isDigit a && isDigit b then digitToInt a * 10 + digitToInt b else 100
 -}
+twoDigits2Int :: Char -> Char -> Int
+twoDigits2Int a b =
+  if isDigit a && isDigit b
+    then digitToInt a * 10 + digitToInt b
+    else 100
+
+-- >>> twoDigits2Int '4' '2' == 42
+-- True
+--------------------------------------------------------------------------------
 
 {-
 Tuples
@@ -192,10 +202,15 @@ dist p1 p2 = ???
 
 SOLUTION
 ========
+-}
 dist :: (Double, Double) -> (Double, Double) -> Double
 dist p1 p2 = sqrt ((fst p2 - fst p1) ^ 2 + (snd p2 - snd p1) ^ 2)
 
--}
+-- >>> dist (1, 3) (3, 3) == 2.0
+-- >>> dist (3, 0) (3, 3) == 3.0
+-- True
+-- True
+--------------------------------------------------------------------------------
 
 {-
 Lists

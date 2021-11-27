@@ -101,6 +101,7 @@ GHCi> toString ()
 
 SOLUTION
 ========
+-}
 class Printable a where
   toString :: a -> String
 
@@ -109,7 +110,14 @@ instance Printable Bool where
 
 instance Printable () where
   toString _ = "unit type"
--}
+
+-- >>> toString True  == "true"
+-- >>> toString False == "false"
+-- >>> toString ()    == "unit type"
+-- True
+-- True
+-- True
+--------------------------------------------------------------------------------
 
 -- class Eq a where
 --   (==), (/=) :: a -> a -> Bool
@@ -146,6 +154,12 @@ GHCi> toString (True,False)
 
 SOLUTION
 ========
+-}
 instance (Printable a, Printable b) => Printable (a, b) where
   toString (a, b) = "(" ++ toString a ++ "," ++ toString b ++ ")"
--}
+
+-- >>> toString (False, ())   == "(false,unit type)"
+-- >>> toString (True, False) == "(true,false)"
+-- True
+-- True
+--------------------------------------------------------------------------------

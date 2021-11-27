@@ -56,9 +56,15 @@ GHCi> getSecondFrom 'x' 42 True
 
 SOLUTION
 ========
+-}
 getSecondFrom :: t1 -> t2 -> t3 -> t2
 getSecondFrom _ b _ = b
--}
+
+-- >>> getSecondFrom True 'x' "Hello" == 'x'
+-- >>> getSecondFrom 'x' 42 True      == 42
+-- True
+-- True
+--------------------------------------------------------------------------------
 
 {-
 TASK
@@ -160,12 +166,16 @@ on op f x y = f x `op` f y
 
 SOLUTION
 ========
-import Data.Function (on)
-
-multSecond = g `on` h
-g = (*)
-h = snd
 -}
+multSecond = g `on` h
+
+g = (*)
+
+h = snd
+
+-- >>> multSecond ('A',2) ('E',7) ==14
+-- True
+--------------------------------------------------------------------------------
 
 {-
 Anonymous functions (Lambdas)
@@ -241,6 +251,11 @@ TASK
 
 SOLUTION
 ========
+-}
 on3 :: (b -> b -> b -> c) -> (a -> b) -> a -> a -> a -> c
 on3 f op x y z = f (op x) (op y) (op z)
--}
+
+-- >>> sum3squares = (\x y z -> x+y+z) `on3` (^2)
+-- >>> sum3squares 1 2 3 == 14
+-- True
+--------------------------------------------------------------------------------

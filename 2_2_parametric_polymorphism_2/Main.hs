@@ -5,16 +5,16 @@ Parametric polymorphism 2
 
 import Data.Function (on)
 
-f :: b -> c
-f = undefined
+f' :: b -> c
+f' = undefined
 
-g :: a -> b
-g = undefined
+g' :: a -> b
+g' = undefined
 
-x :: a
-x = undefined
+x' :: a
+x' = undefined
 
-compose f g = \x -> f (g x)
+compose f g = \x -> f' (g' x)
 
 -- > :i (.)
 -- (.) :: (b -> c) -> (a -> b) -> a -> c -- Defined in `GHC.Base`
@@ -42,6 +42,7 @@ TASK
 
 SOLUTION
 ========
+-}
 f = logBase 2
 
 g = (^ 3)
@@ -49,7 +50,8 @@ g = (^ 3)
 h = max 42
 
 doItYourself = f . g . h
--}
+
+--------------------------------------------------------------------------------
 
 -- :t [True, False]
 -- [True,False] :: [Bool]

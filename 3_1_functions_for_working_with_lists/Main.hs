@@ -6,7 +6,21 @@ Modules and compilation
 Functions for working with lists
 ================================
 -}
-import Prelude hiding (drop, init, last, length, null, reverse, splitAt, take, unzip, zip, zip3, (!!), (++))
+import Prelude hiding
+  ( drop,
+    init,
+    last,
+    length,
+    null,
+    reverse,
+    splitAt,
+    take,
+    unzip,
+    zip,
+    zip3,
+    (!!),
+    (++),
+  )
 
 -- >>> []
 -- []
@@ -44,9 +58,13 @@ GHCi> addTwoElements 2 12 [85,0,6]
 
 SOLUTION
 ========
+-}
 addTwoElements :: a -> a -> [a] -> [a]
 addTwoElements x y l = x : y : l
--}
+
+-- >>> addTwoElements 2 12 [85,0,6] == [2,12,85,0,6]
+-- True
+--------------------------------------------------------------------------------
 
 {-
 TASK
@@ -62,13 +80,19 @@ GHCi> nTimes 'z' 5
 
 SOLUTION
 ========
+-}
 nTimes :: a -> Int -> [a]
 nTimes x n = addToList [] x n
   where
     addToList list x n
       | n == 0 = list
       | otherwise = addToList (x : list) x (n - 1)
--}
+
+-- >>> nTimes 42 3 == [42,42,42]
+-- >>> nTimes 'z' 5 == "zzzzz"
+-- True
+-- True
+--------------------------------------------------------------------------------
 
 -- > :t head
 -- head :: [a] -> a
@@ -184,12 +208,16 @@ GHCi> oddsOnly [2,5,7,10,11,12]
 
 SOLUTION
 ========
+-}
 oddsOnly :: Integral a => [a] -> [a]
 oddsOnly [] = []
 oddsOnly (x : xs)
   | odd x = x : oddsOnly xs
   | otherwise = oddsOnly xs
--}
+
+-- >>> oddsOnly [2,5,7,10,11,12] == [5,7,11]
+-- True
+--------------------------------------------------------------------------------
 
 -- NOTE: Complexity is O(N)
 last :: [a] -> a
@@ -231,17 +259,24 @@ TASK
 
 SOLUTION
 ========
+-}
 isPalindrome xs = helper xs (reverse xs) n
   where
     n = length xs `div` 2
     helper _ _ 0 = True
     helper (x : xs) (y : ys) n =
-      if (x == y)
-        then helper xs ys (n - 1)
-        else False
+      (x == y) && helper xs ys (n - 1)
+
 -- OR
 -- isPalindrome xs = reverse xs == xs
--}
+
+-- >>> isPalindrome "saippuakivikauppias" == True
+-- >>> isPalindrome [1]                   == True
+-- >>> isPalindrome [1, 2]                == False
+-- True
+-- True
+-- True
+--------------------------------------------------------------------------------
 
 zip :: [a] -> [b] -> [(a, b)]
 zip (a : as) (b : bs) = (a, b) : zip as bs
@@ -275,6 +310,7 @@ GHCi> sum3 [1,2,3] [4,5] [6]
 
 SOLUTION
 ========
+-}
 headTail :: Num a => [a] -> (a, [a])
 headTail [] = (0, [])
 headTail (x : xs) = (x, xs)
@@ -286,7 +322,10 @@ sum3 as bs cs = (a + b + c) : sum3 as' bs' cs'
     (a, as') = headTail as
     (b, bs') = headTail bs
     (c, cs') = headTail cs
--}
+
+-- >>> sum3 [1,2,3] [4,5] [6] == [11,7,3]
+-- True
+--------------------------------------------------------------------------------
 
 {-
 TASK
@@ -307,6 +346,7 @@ TASK
 
 SOLUTION
 ========
+-}
 groupElems :: Eq a => [a] -> [[a]]
 groupElems [] = []
 groupElems (a : as) = reverse (helper [] [a] as)
@@ -319,7 +359,16 @@ groupElems (a : as) = reverse (helper [] [a] as)
         else helper (group : result) [a] as
       where
         g = head group
--}
+
+-- >>> groupElems []          == []
+-- >>> groupElems [1,2]       == [[1],[2]]
+-- >>> groupElems [1,2,2,2,4] == [[1],[2,2,2],[4]]
+-- >>> groupElems [1,2,3,2,4] == [[1],[2],[3],[2],[4]]
+-- True
+-- True
+-- True
+-- True
+--------------------------------------------------------------------------------
 
 take :: Int -> [a] -> [a]
 take n _ | n <= 0 = []
