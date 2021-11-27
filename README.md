@@ -25,8 +25,8 @@ Status: 🚧
   - [✏️ 2.4. Стандартные классы типов](2_4_standard_type_classes/Main.hs) / `Standard type classes`
   - [✏️ 2.5. Нестрогая семантика](2_5_lax_semantics/Main.hs) / `Lax semantics`
   - [✏️ 2.6. Модули и компиляция](2_6_modules-and_compilation/Main.hs) / `Modules and compilation`
-- 🚧 3. Списки / `Lists`
-  - 🚧 3.1. Функции для работы со списками / `Functions for working with lists`
+- **3. Списки** / `Lists`
+  - [✏️ 3.1. Функции для работы со списками](3_1_functions_for_working_with_lists/Main.hs) / `Functions for working with lists`
   - 🚧 3.2. Функции высших порядков над списками / `Higher-order functions on lists`
   - 🚧 3.3. Генераторы списков / `List comprehension`
   - 🚧 3.4. Правая свертка / `[TODO] Clarify a term`
