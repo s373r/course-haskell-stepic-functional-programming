@@ -31,7 +31,7 @@ Status: 🚧
   - [✏️ 3.3. Генераторы списков](3_3_list_comprehension/Main.hs) / `List comprehension`
   - [✏️ 3.4. Правая свертка](3_4_right_fold/Main.hs)) / `Right fold`
   - [✏️ 3.5. Левая свертка и ее сравнение с правой](3_5_left_fold_and_comparison_with_right_fold/Main.hs) / `Left fold and comparison with right fold`
-  - 🚧 3.6. Родственные сверткам функции / `[TODO] Clarify a term`
+  - [✏️ 3.6. Родственные сверткам функции]() / `Related to fold functions`
 - 🚧 4. Типы данных / `Data types`
   - 🚧 4.1. Типы перечислений / `Enumeration types`
   - 🚧 4.2. Типы произведений и сумм произведений / `Product types and sum type of product types`
