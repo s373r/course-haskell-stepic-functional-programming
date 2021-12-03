@@ -29,7 +29,7 @@ Status: 🚧
   - [✏️ 3.1. Функции для работы со списками](3_1_functions_for_working_with_lists/Main.hs) / `Functions for working with lists`
   - [✏️ 3.2. Функции высших порядков над списками](3_2_higher-order_functions_on_lists/Main.hs) / `Higher-order functions on lists`
   - [✏️ 3.3. Генераторы списков](3_3_list_comprehension/Main.hs) / `List comprehension`
-  - 🚧 3.4. Правая свертка / `[TODO] Clarify a term`
+  - [✏️ 3.4. Правая свертка](3_4_right_fold/Main.hs)) / `Right fold`
   - 🚧 3.5. Левая свертка и ее сравнение с правой / `[TODO] Clarify a term`
   - 🚧 3.6. Родственные сверткам функции / `[TODO] Clarify a term`
 - 🚧 4. Типы данных / `Data types`
