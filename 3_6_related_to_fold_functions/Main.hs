@@ -150,6 +150,6 @@ revRange (a, b) = unfoldr g b
       | a <= x && x <= b = Just (x, pred x)
       | otherwise = Nothing
 
--- >>> revRange ('a','z')
--- "zyxwvutsrqponmlkjihgfedcba"
+-- >>> revRange ('a','z') == "zyxwvutsrqponmlkjihgfedcba"
+-- True
 --------------------------------------------------------------------------------
