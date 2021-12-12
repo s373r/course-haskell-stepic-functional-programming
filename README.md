@@ -32,8 +32,8 @@ Status: 🚧
   - [✏️ 3.4. Правая свертка](3_4_right_fold/Main.hs)) / `Right fold`
   - [✏️ 3.5. Левая свертка и ее сравнение с правой](3_5_left_fold_and_comparison_with_right_fold/Main.hs) / `Left fold and comparison with right fold`
   - [✏️ 3.6. Родственные сверткам функции]() / `Related to fold functions`
-- 🚧 4. Типы данных / `Data types`
-  - 🚧 4.1. Типы перечислений / `Enumeration types`
+- **4. Типы данных** / `Data types`
+  - [✏️ 4.1. Типы перечислений](4_1_enumeration_types/Main.hs) / `Enumeration types`
   - 🚧 4.2. Типы произведений и сумм произведений / `Product types and sum type of product types`
   - 🚧 4.3. Синтаксис записей / `Record syntax`
   - 🚧 4.4. Типы с параметрами / `Types with parameters`
