@@ -37,7 +37,7 @@ Status: 🚧
   - [✏️ 4.2. Типы произведений и сумм произведений](4_2_product_types_and_sum_type_of_product_types/Main.hs) / `Product types and sum type of product types`
   - [✏️ 4.3. Синтаксис записей](4_3_record_syntax/Main.hs) / `Record syntax`
   - [✏️ 4.4. Типы с параметрами](4_4_types_with_parameters/Main.hs) / `Types with parameters`
-  - 🚧 4.5. Рекурсивные типы данных / `Recursive data types`
+  - [✏️ 4.5. Рекурсивные типы данных](4_5_recursive_data_types/Main.hs) / `Recursive data types`
   - 🚧 4.6. Синонимы и обертки для типов / `Synonyms and type wrappers`
 - 🚧 5. Монады / `Monads`
   - 🚧 5.1. Класс типов Functor и законы для него / `Functor typeclass and laws for it`
