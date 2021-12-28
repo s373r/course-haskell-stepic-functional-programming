@@ -39,8 +39,8 @@ Status: 🚧
   - [✏️ 4.4. Типы с параметрами](4_4_types_with_parameters/Main.hs) / `Types with parameters`
   - [✏️ 4.5. Рекурсивные типы данных](4_5_recursive_data_types/Main.hs) / `Recursive data types`
   - [✏️ 4.6. Синонимы и обертки для типов](4_6_synonyms_and_type_wrappers/Main.hs) / `Synonyms and type wrappers`
-- 🚧 5. Монады / `Monads`
-  - 🚧 5.1. Класс типов Functor и законы для него / `Functor typeclass and laws for it`
+- **5. Монады** / `Monads`
+  - [✏️ 5.1. Класс типов Functor и законы для него](5_1_functor_typeclass_and_laws_for_it/Main.hs) / `Functor typeclass and laws for it`
   - 🚧 5.2. Определение монады / `Monad defenition`
   - 🚧 5.3. Монада Identity / `Identity monad`
   - 🚧 5.4. Список и Maybe как монады / `List and Maybe as monads`
