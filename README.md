@@ -38,7 +38,7 @@ Status: 🚧
   - [✏️ 4.3. Синтаксис записей](4_3_record_syntax/Main.hs) / `Record syntax`
   - [✏️ 4.4. Типы с параметрами](4_4_types_with_parameters/Main.hs) / `Types with parameters`
   - [✏️ 4.5. Рекурсивные типы данных](4_5_recursive_data_types/Main.hs) / `Recursive data types`
-  - 🚧 4.6. Синонимы и обертки для типов / `Synonyms and type wrappers`
+  - [✏️ 4.6. Синонимы и обертки для типов](4_6_synonyms_and_type_wrappers/Main.hs) / `Synonyms and type wrappers`
 - 🚧 5. Монады / `Monads`
   - 🚧 5.1. Класс типов Functor и законы для него / `Functor typeclass and laws for it`
   - 🚧 5.2. Определение монады / `Monad defenition`
