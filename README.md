@@ -41,7 +41,7 @@ Status: 🚧
   - [✏️ 4.6. Синонимы и обертки для типов](4_6_synonyms_and_type_wrappers/Main.hs) / `Synonyms and type wrappers`
 - **5. Монады** / `Monads`
   - [✏️ 5.1. Класс типов Functor и законы для него](5_1_functor_typeclass_and_laws_for_it/Main.hs) / `Functor typeclass and laws for it`
-  - 🚧 5.2. Определение монады / `Monad defenition`
+  - [✏️ 5.2. Определение монады](5_2_monad_defenition/Main.hs) / `Monad defenition`
   - 🚧 5.3. Монада Identity / `Identity monad`
   - 🚧 5.4. Список и Maybe как монады / `List and Maybe as monads`
   - 🚧 5.5. Монада IO / `IO monad`
