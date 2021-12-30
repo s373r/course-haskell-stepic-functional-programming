@@ -43,7 +43,7 @@ Status: 🚧
   - [✏️ 5.1. Класс типов Functor и законы для него](5_1_functor_typeclass_and_laws_for_it/Main.hs) / `Functor typeclass and laws for it`
   - [✏️ 5.2. Определение монады](5_2_monad_defenition/Main.hs) / `Monad defenition`
   - [✏️ 5.3. Монада Identity](5_3_identity_monad/Main.hs) / `Identity monad`
-  - 🚧 5.4. Список и Maybe как монады / `List and Maybe as monads`
+  - [✏️ 5.4. Список и Maybe как монады](5_4_list_and_maybe_as_monads/Main.hs) / `List and Maybe as monads`
   - 🚧 5.5. Монада IO / `IO monad`
   - 🚧 5.6. Монада Reader / `Reader monad`
   - 🚧 5.7. Монада Writer / `Writer monad`
