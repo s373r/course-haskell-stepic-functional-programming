@@ -46,7 +46,7 @@ Status: 🚧
   - [✏️ 5.4. Список и Maybe как монады](5_4_list_and_maybe_as_monads/Main.hs) / `List and Maybe as monads`
   - [✏️ 5.5. Монада IO](5_5_IO_monad/Main.hs) / `IO monad`
   - [✏️ 5.6. Монада Reader](5_6_reader_monad/Main.hs) / `Reader monad`
-  - 🚧 5.7. Монада Writer / `Writer monad`
+  - [✏️ 5.7. Монада Writer](5_7_writer_monad/Main.hs) / `Writer monad`
   - 🚧 5.8. Монада State / `State monad`
 
 ## Code conduction
