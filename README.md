@@ -47,7 +47,7 @@ Status: 🚧
   - [✏️ 5.5. Монада IO](5_5_IO_monad/Main.hs) / `IO monad`
   - [✏️ 5.6. Монада Reader](5_6_reader_monad/Main.hs) / `Reader monad`
   - [✏️ 5.7. Монада Writer](5_7_writer_monad/Main.hs) / `Writer monad`
-  - 🚧 5.8. Монада State / `State monad`
+  - [✏️ 5.8. Монада State](5_8_state_monad/Main.hs) / `State monad`
 
 ## Code conduction
 
