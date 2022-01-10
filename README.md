@@ -2,7 +2,7 @@
 
 Course link: https://stepik.org/course/75 `[In Russian]`
 
-Status: 🚧
+Status: ✅
 
 ### Index legend
 
